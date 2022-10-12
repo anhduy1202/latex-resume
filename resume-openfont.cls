@@ -23,6 +23,8 @@
 \RequirePackage{enumitem}
 % Using tables like the profile section
 \RequirePackage{tabularx}
+% Used for the link symbol
+\usepackage{fontawesome5}
 % Set up font 
 \RequirePackage{lato-font}
 
