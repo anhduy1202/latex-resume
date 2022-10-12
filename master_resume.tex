@@ -44,10 +44,9 @@
 % Parameters: courses
 \newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
 
-\newcommand{\hackathon}[2]{
-#1
+\newcommand{\items}[1]{
 \begin{itemize}[noitemsep, topsep=0pt, align=left, leftmargin=*]
-\item #2
+\item #1
 \end{itemize}
 }
 
@@ -57,21 +56,21 @@
 %--------------------------------------------------------------
 %     Profile
 %--------------------------------------------------------------
-\newcommand{\yourName}{Justin Stitt}
-\newcommand{\yourWebsite}{github.com/JustinStitt}
-\newcommand{\yourEmail}{jstitt007@gmail.com}
+\newcommand{\yourName}{Quoc Truong}
+\newcommand{\yourGithub}{github.com/anhduy1202}
+\newcommand{\yourLinkedIn}{linkedin.com/danieltruongg}
+\newcommand{\yourEmail}{aduy1122@gmail.com}
 \newcommand{\yourPhone}{Orange County, CA}
 
 \begin{center}
 	\Huge\fontsize{36pt}{36pt} \scshape \latoBold{\yourName}   \\ \vspace{1pt}
 	\normalsize
-	\faEnvelope \hspace*{3pt}
-	\href{mailto:\yourEmail}{{\yourEmail}}
+	\href{mailto:\anhduy1202@gmail.com}{{\yourEmail}}
 	\hspace*{3pt} \hspace*{3pt}
-	\faGithub \hspace*{3pt}
-	\href{www.github.com/justinstitt}{{\yourWebsite}}
+	\href{https://www.linkedin.com/in/danieltruongg}{{\yourLinkedIn}}
 	\hspace*{3pt} \hspace*{3pt}
-	\faHome \hspace*{3pt}
+	\href{www.github.com/anhduy1202}{{\yourGithub}}
+	\hspace*{3pt} \hspace*{3pt}
 	{{\yourPhone}}
 	% $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
 \end{center}
@@ -86,7 +85,7 @@
 % \textcolor[HTML]{000000}{}
 % Put school first and degree second if your school is reputable
 \educationHeading{B.S. Computer Science}{California State University,
-Fullerton}{}{}{Graduation Date:}{May 2023}{GPA: 3.6}
+Fullerton}{Graduation Date:}{May 2024}{GPA: 4.0}
 \sectionsep
 
 %--------------------------------------------------------------
@@ -95,37 +94,38 @@ Fullerton}{}{}{Graduation Date:}{May 2023}{GPA: 3.6}
 \section{Work Experience}
 \sectionUnderline
 
-\resumeHeadingSmall{Google}{SWE Intern | Mountain View, CA}{May 2022 – Aug
-																																				2022}
+\resumeHeadingSmall{Association for Computing Machinery CSUF}{Project Manager}{Jun 2022 – Present}
 \begin{bullets}
-	\item Contribute patches to the Linux Kernel to further enable
-		Clang/LLVM build support while decoupling Google assets from
-		GCC
-	\item Improve LLVM build times by 2.1\% through profiling and
-		optimization efforts ultimately reducing build costs for Google
+	\item Conducted educational sessions such as Intro to Web Dev, Intro to Github, Working with APIs for more than 50 beginner developers weekly as a subject matter expert
+(SME)
+	\item Managed semester-long projects and provided techincal guidance to help members complete their projects including Svelte Portfolio Website, Canvas Notion Intergration for
+	ECS Showcase 2022 event
+	 
 \end{bullets}
 \sectionsep
 
-\resumeHeadingSmall{Google}{STEP Intern | Remote}{May 2021 – Aug 2021}
+\resumeHeadingSmall{California State University, Fullerton}{Data Science Research Assistant}{May 2022 – July 2022}
 \begin{bullets}
-	\item Perform analysis on internal data to determine its usefulness
-		within a binary classifier feature space using SQL and Python
-	\item Preprocess, slice, and organize data for use as input and
-		labeling features using Pandas and NumPy
-	\item Improve advertiser experience and secure revenue for Google by
-		automating the appeals prediction process
-	\item Utilize TensorFlow to design, train, and evaluate a neural
-		network’s performance across various metrics
+	\item Researched about Data Science concepts such as data visualization, data analysis and Machine Learning concepts such as Linear Regression, K-Means Clustering,... under the guidance of Dr.Doina Bein
+	\item Developed a Spotify Songs Recommendation System with K-Means and content-based filtering with optimal number of clusters through
+	Elbow Method, Silhouette Number enhancing result outcome by 50\%
 \end{bullets}
 \sectionsep
 
-\resumeHeadingSmall{California State University, Fullerton}{Supplemental
-																							Instructor}{Jan 2020 – Present}
+\resumeHeadingSmall{Titan Radio}{Web Developer | Fullerton, CA}{Jan 2022 – May 2022}
 \begin{bullets}
-	\item Communicate complex topics regarding \textbf{C++} and \textbf{data
-		structures} to groups with varying levels of understanding
-	\item Prepare engaging study sessions and materials in accordance with lecture
-	topics
+	\item Maintained website for CSUF radio station serves 35000 students per semester with HTML, CSS, JavaScript, PHP, Wordpress
+	\item Constructing a React Native mobile app for radio streaming and DJ's show schedule with Typescript
+	\item Mentored web design intern through Notion applying Scrum best practices to design website graphics, enhancing efficiency by 60%
+\end{bullets}
+\sectionsep
+
+\resumeHeadingSmall{Birdy Labs}{Software Engineer Intern | Philadelphia}{Nov 2021 – Jan 2022}
+\begin{bullets}
+	\item Experimented with latest front-end technologies (Next.js, Redux, Tailwind CSS) as a part of implementation of high-volume appointment
+	booking web app with more than 1000 weekly users
+	\item Constructed new and customisation of time-picker and appointment schedule, resulting in consistent deployment of 4 major products
+	updates and boosted user engagements by 40\%
 \end{bullets}
 \sectionsep
 
@@ -134,81 +134,31 @@ Fullerton}{}{}{Graduation Date:}{May 2023}{GPA: 3.6}
 %--------------------------------------------------------------
 \section{Projects}
 \sectionUnderline
-\resumeHeadingSmall{TuffyHacks 2021 \& 2022 Winner: Best Overall}{24 Hour
-Hackathon}{March 2021, March 2022}
+\resumeHeadingSmall{Gameboy Simulator}{A desktop application to simulate gameboy image style}{Sep 2022}
 
-\hackathon{Conscious Camper (2021): A sustainability passion project completed
-in under 24 hours!}{Implement Google's Places API, OpenWeather API, and a
-machine learning model to evaluate potential campsites}
+\items {Implemented PyQT, openCV to create a Computer Vision desktop application for image and webcam processing}
 
-\hackathon{Crypto Clicker (2022): An interactive experience demonstrating the
-strain that cryptocurrency has on our planet} {Procedurally generate decaying
-planet model due to the thinning atmosphere caused by Bitcoin mining.}
+\items {Led a team of 3 developers to work on the application, created CI/CD workflow using Github Actions, managed issues using Github Issues which improve productivty and consistency in the production branch by 60\% }
 
 \vspace{5pt}
-\resumeHeadingSmall{x3d Parser}{Parses XML-like files for use in Ray
-Tracing}{Apr 2022}
-\begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
-	\item Generate mesh geometry data from Blender-exported x3d files using
-	triangle vertices
-	\item Configure import/render workflow for newly-generated mesh files into a
-	QT-enabled C++ Ray Tracer
-\end{itemize}
+\resumeHeadingSmall{Spotify Recommendation System}{Machine Learning model suggests Spotify song playlist}{May 2022}
+\items {Analyzed Spotify songs such as songs trend, song features correlation from 2017 to 2022 using Pandas, Matplotlib, Seaborn}
+\items {Implemented Spotipy to retrieve data from Spotify API and create desirable custom datasets including 300 hot songs from 2017-2022}
+\items {Implemented content-based filtering and One-Hot Encoding to determine user's top genre from personal playlist to create
+recommendation table with 50\% more optimal cluster with Elbow Method, Silhouette Score}
 
 \vspace{5pt}
-\resumeHeadingSmall{Social Distancing Sim}{A Simulation of How Social Distancing
-"Flattens the Curve"}{May 2020}
-\begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
-	\item Design a physics-based simulation in Python that correlates collisions
-		to real-time infections. Simulation allows the modification of a “social
-		distancing ratio” that corresponds to the number of people staying at home.
-	\item My findings show that it takes just under 300 days for all subjects to
-		become infected with a 10\% social distancing ratio and around 1,000 days
-		with a 70\% social distancing ratio.
-\end{itemize}
+\resumeHeadingSmall{Tuffy Food}{An IOS app for finding food places at CSUF}{March 2022}
+\items {Led a team of three students to devise a food review mobile app with Swift Storyboard, Cocoa Touch, and Firebase as database for more
+than 100 food places information, allowing us to scale to 300 user target}
+\items {Accomplished features such as user authentication with Firebase Authentication, display food places, submit reviews through Firebase
+API and Swift Storyboard Table View}
 
 \vspace{5pt}
-\resumeHeadingSmall{Philosophy AI}{Generate New Never-Before-Seen philosophical
-Quotes}{Oct 2020}
-\begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
-	\item Scrape XML and HTML web data using Python to build a philosophical
-		corpus.
-	\item Use a Markov chain to generate new philosophical quotes and post them
-		to Instagram overtop a nature-themed image.
-\end{itemize}
-
-
-\vspace{5pt}
-\resumeHeadingSmall{OpenAI Gym}{Develop Machine Learning Models to Compete in
-OpenAI's Gym Environment}{Oct 2020}
-\begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
-	\item Study Deep Learning and develop competent ML models to play classic
-	Atari Games like Breakout and Lunar Lander \item Implement Convolutional
-	Neural Networks and Genetic Feed-Forward networks with TensorFlow, PyTorch and
-	Flux.jl
-\end{itemize}
-\sectionsep
-
-%--------------------------------------------------------------
-%     Leadership
-%--------------------------------------------------------------
-\section{Leadership}
-\sectionUnderline
-\resumeHeadingSmall{Association for Computing Machinery (ACM)}{Artificial
-Intelligence President}{Aug 2022 – Present}
-
-\begin{itemize}[topsep=0pt, align=left, leftmargin=*, itemsep=-3pt]
-	\item Lead workshops in \textbf{accessible Artificial Intelligence} alongside
-	engaging and informative content
-\end{itemize}
-
-\resumeHeadingSmall{International Collegiate Programming Contest (ICPC)}{Team
-Lead}{Feb 2022} \begin{itemize}[topsep=0pt, align=left, leftmargin=*,
-itemsep=-3pt]
-	\item Prepare and organize team notes and strategies for various complex
-	algorithms
-\end{itemize}
-
+\resumeHeadingSmall{Reddat}{A full-stack social media web app}{Dec 2021}
+\items {Launched a full-stack social media mobile web app similar to Reddit, reaching 2000+ users during beta launch}
+\items {Built API endpoints with authentication using JWT authentication, Express, Node.js, MongoDB applying MVC pattern}
+\items {Developed web app user interface with React, Redux Toolkit, and built chat room features with Socket.io increases user traffics by 60\%}
 \sectionsep
 
 %%%%%%
@@ -217,10 +167,10 @@ itemsep=-3pt]
 \section{Skills}
 \sectionUnderline{}
 \begin{skillList}
-	\doubleItem{Languages:}{Python, C/C++, Julia, Ruby, Java, Go, JavaScript, C\#}%
-	{Machine Learning:}{TensorFlow, PyTorch, OpenAI Gym}
+	\doubleItem{Languages:}{Python, TypeScript, JavaScript/HTML/CSS, SQL, Swift}%
+	{Frontend / Mobile:}{Next.js, React, Svelte, React Native}
 	\\
-	\doubleItem{Web Development:}{Svelte, React, Flask, Django, RubyOnRails}
-	{Technology:}{Git, Shell, CI/CD, AWS, \LaTeX, Googling}%
+	\doubleItem{Backend:}{Express.js, Flask, MongoDB, MySQL, Node.js}
+	{Other:}{Git, AWS, VIM, Pandas, Jupyter Notebook}%
 \end{skillList}
 \end{document}
