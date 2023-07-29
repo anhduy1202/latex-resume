@@ -56,7 +56,7 @@
 %--------------------------------------------------------------
 %     Profile
 %--------------------------------------------------------------
-\newcommand{\yourName}{Quoc Truong}
+\newcommand{\yourName}{Daniel Truong}
 \newcommand{\yourGithub}{github.com/anhduy1202}
 \newcommand{\yourLinkedIn}{linkedin.com/danieltruongg}
 \newcommand{\yourEmail}{aduy1122@gmail.com}
@@ -99,11 +99,11 @@
 \section{Skills}
 \sectionUnderline{}
 \begin{skillList}
-	\doubleItem{Languages:}{Python, TypeScript, JavaScript/HTML/CSS, SQL, Swift}%
+	\doubleItem{Languages:}{Python, TypeScript, JavaScript/HTML/CSS}%
 	{Frontend / Mobile:}{Next.js, React, Svelte, React Native}
 	\\
-	\doubleItem{Backend:}{Express.js, Flask, MongoDB, MySQL, Node.js}
-	{Other:}{Git, AWS, VIM, Pandas, Jupyter Notebook}%
+	\doubleItem{Backend:}{Express, FastAPI, Prisma, MongoDB, MySQL, DynamoDB}
+	{Other:}{AWS S3, Lambda, QuickSight, Glue, CDK}%
 \end{skillList}
 
 %--------------------------------------------------------------
@@ -113,15 +113,30 @@
 \section{Work Experience}
 \sectionUnderline
 
-\resumeHeadingSmall{AMAZON}{Incoming SDE Intern | Seattle, WA}{Summer 2023}
+\resumeHeadingSmall{Amazon Web Services}{SDE Intern | Seattle, WA}{May 2023 - Aug 2023}
+\begin{bullets}
+	\item Developed a monitoring dashboard for localization package build status, integrating it to an internal data analytics service in collaboration with the AWS Documentation team.
+	\item Leveraged AWS CDK (Cloud Development Kit) and worked closely with my mentor to design and implement the architecture for the project.
+	\item Led the data transformation process using PySpark, AWS Glue, and AWS S3 to process and prepare data for analysis and visualization.
+	\item Deployed infrastructure components to AWS CloudFormation, ensuring reliable and scalable deployment of the system, and created a comprehensive dashboard with AWS QuickSight sourcing data from the internal datalake.
+	\item Enabled the Documentation team to promptly detect failed builds, resulting in increased efficiency and productivity, made a significant impact on the entire Documentation team by streamlining processes and improving visibility into build status.
+	\item Key contributor to a groundbreaking organization-level project, a new internal service tool. Pioneered the implementation of Kahn's Algorithm for a pivotal logic feature and collaborated seamlessly with frontend engineers to enhance the project's UI.
+\end{bullets}
 \sectionsep
 
-\resumeHeadingSmall{Association for Computing Machinery CSUF}{Project Manager}{Jun 2022 – Present}
+\resumeHeadingSmall{Amazon}{Student Fellows}{Feb 2023 – May 2023}
+\begin{bullets}
+	\item Selected as one of 10 students for the prestigious Amazon Student Fellowship program, collaborating with a team of 4 fellow students.
+	\item Developed a transgender resource mobile web application from inception to completion, incorporating stakeholder interviews, research, and data collection.
+	\item Achieved 2nd place among 14 teams in the Engineering competition by CSUF, showcasing strong teamwork, communication, and coding skills.
+\end{bullets}
+\sectionsep
+
+\resumeHeadingSmall{Association for Computing Machinery CSUF}{Vice President, PM}{Jun 2022 – Present}
 \begin{bullets}
 	\item Conducted educational sessions such as Intro to Web Dev, Intro to Github, Working with APIs for more than 50 beginner developers weekly as a subject matter expert
 (SME)
-	\item Managed semester-long projects and provided techincal guidance to help members complete their projects including Svelte Portfolio Website, Canvas Notion Intergration for
-	ECS Showcase 2022 event
+	\item Managed semester-long projects and provided techincal guidance to help members complete their projects including Svelte Portfolio Website, Canvas Notion Intergration for ECS Showcase 2022 event
 	 
 \end{bullets}
 \sectionsep
@@ -141,21 +156,23 @@
 	\item Mentored web design intern through Notion applying Scrum best practices to design website graphics, enhancing efficiency by 60%
 \end{bullets}
 \sectionsep
-
-\resumeHeadingSmall{Birdy Labs}{Software Engineer Intern | Philadelphia}{Nov 2021 – Jan 2022}
-\begin{bullets}
-	\item Experimented with latest front-end technologies (Next.js, Redux, Tailwind CSS) as a part of implementation of high-volume appointment
-	booking web app with more than 1000 weekly users
-	\item Constructed new and customisation of time-picker and appointment schedule, resulting in consistent deployment of 4 major products
-	updates and boosted user engagements by 40\%
-\end{bullets}
-
 %--------------------------------------------------------------
 %     Projects
 %--------------------------------------------------------------
 \sectionsep
 \section{Projects}
 \sectionUnderline
+\resumeHeadingSmall{WordCloud Vote}{An anonymous voting platform with word cloud visualization}{Feb 2023}
+
+\items {Developed a full-stack web application called WordCloud Vote, providing an anonymous and secure voting platform.}
+
+\items {Created the user interface using Next.js, TypeScript, and TailwindCSS, ensuring an intuitive and user-friendly voting experience.}
+
+\items {Designed the database structure and utilized Prisma and MongoDB for efficient backend development.}
+
+\items {Implemented word cloud visualization to facilitate easy analysis of voting results, enhancing data comprehension and insights.}
+
+\vspace{5pt}
 \resumeHeadingSmall{Gameboy Simulator}{A desktop application to simulate gameboy image style}{Sep 2022}
 
 \items {Implemented PyQT, openCV to create a Computer Vision desktop application for image and webcam processing}
@@ -168,13 +185,6 @@
 \items {Implemented Spotipy to retrieve data from Spotify API and create desirable custom datasets including 300 hot songs from 2017-2022}
 \items {Implemented content-based filtering and One-Hot Encoding to determine user's top genre from personal playlist to create
 recommendation table with 50\% more optimal cluster with Elbow Method, Silhouette Score}
-
-\vspace{5pt}
-\resumeHeadingSmall{Tuffy Food}{An IOS app for finding food places at CSUF}{March 2022}
-\items {Led a team of three students to devise a food review mobile app with Swift Storyboard, Cocoa Touch, and Firebase as database for more
-than 100 food places information, allowing us to scale to 300 user target}
-\items {Accomplished features such as user authentication with Firebase Authentication, display food places, submit reviews through Firebase
-API and Swift Storyboard Table View}
 
 \vspace{5pt}
 \resumeHeadingSmall{Reddat}{A full-stack social media web app}{Dec 2021}
