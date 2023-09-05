@@ -1,0 +1,167 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ |
+#2}\hfill\location{#3 \hspace*{4pt}|\hspace*{4pt} #4}\fakeNewLine}
+
+\newcommand{\resumeHeadingSmall}[3]{\runsubsection{\uppercase{#1}}\descript{ |
+#2}\hfill\location{\hspace*{4pt} #3}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[7]{
+\runsubsection{#1}\hspace*{\fill}
+\location{#3}
+\hspace*{3pt}
+\textbf{#4}
+\hspace*{\fill}
+\location{#5}
+\hspace*{3pt}
+\textbf{#6}
+% \runsubsection{#3}\hspace*{\fill}
+% \runsubsection{#4}
+\\
+\descript{#2}
+\hspace*{\fill}
+\textbf{#7}
+}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\runsubsection{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+
+\newcommand{\items}[1]{
+\begin{itemize}[noitemsep, topsep=0pt, align=left, leftmargin=*]
+\item #1
+\end{itemize}
+}
+
+%--------------------------------------------------------------
+\begin{document}
+\renewcommand{\arraystretch}{1.3}
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Daniel Truong}
+\newcommand{\yourGithub}{github.com/anhduy1202}
+\newcommand{\yourLinkedIn}{linkedin.com/danieltruongg}
+\newcommand{\yourEmail}{aduy1122@gmail.com}
+\newcommand{\yourWebsite}{danieltruongg.com}
+\newcommand{\yourPhone}{Orange County, CA}
+
+\begin{center}
+	\Huge\fontsize{22pt}{22pt} \scshape \latoBold{\yourName}   \\ \vspace{1pt}
+	\normalsize
+	\faEnvelope \hspace*{3pt}
+	\href{mailto:\anhduy1202@gmail.com}{{\yourEmail}}
+	\hspace*{3pt} \hspace*{3pt}
+	\faGlobe \hspace*{3pt}
+	\href{https://danieltruongg.com}{{\yourWebsite}}
+	\hspace*{3pt} \hspace*{3pt}
+	\faLinkedin \hspace*{3pt}
+	\href{https://www.linkedin.com/in/danieltruongg}{{\yourLinkedIn}}
+	\hspace*{3pt} \hspace*{3pt}
+	\faGithub \hspace*{3pt}
+	\href{www.github.com/anhduy1202}{{\yourGithub}}
+	\hspace*{3pt} \hspace*{3pt}
+	% $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+\sectionUnderline
+% \vspace{-10pt}
+% \noindent\textcolor[HTML]{2b2b2b}{\rule{\textwidth}{.7pt}}
+% \textcolor[HTML]{000000}{}
+% Put school first and degree second if your school is reputable
+\educationHeading{B.S. Computer Science}{California State University, Fullerton}{Graduation Date:}{May 2024}{GPA: 3.98}
+
+%%%%%%
+% Maybe ditch this and do in-line skills for each project?
+%%%%%%%
+\sectionsep
+\section{Skills}
+\sectionUnderline{}
+\begin{skillList}
+	\doubleItem{Languages:}{Python, TypeScript, JavaScript/HTML/CSS}%
+	{Frontend / Mobile:}{Next.js, React, Svelte, React Native}
+	\\
+	\doubleItem{Backend:}{Express, FastAPI, Prisma, MongoDB, MySQL, DynamoDB}
+	{Other:}{AWS S3, Lambda, QuickSight, Glue, CDK}%
+\end{skillList}
+
+%--------------------------------------------------------------
+%     Work Experience
+%--------------------------------------------------------------
+\sectionsep
+\section{Work Experience}
+\sectionUnderline
+\resumeHeadingSmall{Amazon Web Services}{Software Development Engineer Intern | Seattle, WA}{May 2023 - Aug 2023}
+\begin{bullets}
+\item Developed a monitoring dashboard, integrating it to an internal data analytics service to promptly detect several metrics, resulting in increasing the detection process by 80\% and automate the data collection process entirely
+\item Made a significant impact on the entire Documentation team by streamlining processes and improving visibility into more than 5000 localization packages total and 300 builds daily.
+\item Led the data transformation process using PySpark, AWS Glue, and AWS S3 to process 300 builds daily and prepare data for analysis and created a comprehensive dashboard with AWS QuickSight sourcing data from the internal datalake.
+\item Key contributor to an organization-level project, a new internal service tool for doc writers. Pioneered the implementation of Kahn's Algorithm to handle 9000+ entities data for a pivotal logic feature and collaborated with frontend engineers to develop the project's UI using TypeScript.
+\end{bullets}
+\sectionsep
+
+\resumeHeadingSmall{Amazon}{Student Research Fellow | Fullerton, CA}{Feb 2023 – May 2023}
+\begin{bullets}
+\item Selected as one of 10 CSUF students for the prestigious Amazon Student Fellowship program, collaborating with a team of 4 fellow students and developed a transgender resource mobile web application from inception to completion, incorporating stakeholder interviews, research, and data collection.
+\item Achieved 2nd place among 14 teams in the Engineering competition by CSUF, showcasing strong teamwork, communication, and coding skills.
+\end{bullets}
+\sectionsep
+
+\resumeHeadingSmall{Association for Computing Machinery CSUF}{Vice President | Fullerton, CA}{June 2022 – Present}
+\begin{bullets}
+\item Empowered a community of over 1000 tech enthusiasts as Vice President of ACM CSUF, fostering an inclusive and thriving tech club on campus. Led the successful organization of FullyHacks, CSUF's inaugural and largest in-person hackathon with more than 200 participants, providing a platform for students to showcase their innovation and coding prowess.
+	 
+\end{bullets}
+\sectionsep
+
+\resumeHeadingSmall{Titan Radio}{Web Developer | Fullerton, CA}{Jan 2022 – May 2022}
+\begin{bullets}
+	\item Maintained website for CSUF radio station serves 35000 students per semester with HTML, CSS, JavaScript, PHP, Wordpress
+	\item Constructing a React Native mobile app for radio streaming and DJ's show schedule with Typescript
+	\item Mentored web design intern through Notion applying Scrum best practices to design website graphics, enhancing efficiency by 60\%
+\end{bullets}
+\sectionsep%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\sectionsep
+\section{Projects}
+\sectionUnderline
+\resumeHeadingSmall{TranscendCare}{Transgender centered mobile web application}{May 2023}
+
+\items {Implemented Next.js 13, TailwindCSS, TypeScript to create the frontend of the web application}
+
+\items {Achieved 2nd place out of 14 teams in CSUF Engineering Competition and launched beta version for more than 200 trial transgender individuals throughout California }
+	
+\vspace{5pt}
+\resumeHeadingSmall{FullyHacks 2023}{Fullstack hackathon web application for CSUF}{April 2023}
+\items {Created a modern and responsive user interface using Next.js and TailwindCSS, resulting in an intuitive and visually appealing web application for over 200 hackathon participants.}
+\items {Developed a microfrontend built in social media platform allowing over 200 participants to connect in real time, receieve announcements, perks,... }
+
+\vspace{5pt}
+\resumeHeadingSmall{Reddat}{A full-stack social media web app}{Dec 2021}
+\items {Launched a full-stack social media mobile web app similar to Reddit, reaching 2000+ users during beta launch}
+\items {Built API endpoints with authentication using JWT authentication, Express, Node.js, MongoDB applying MVC pattern}
+\items {Developed web app user interface with React, Redux Toolkit, and built chat room features with Socket.io increases user traffics by 60\%}
+
+\end{document}
